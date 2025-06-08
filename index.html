@@ -1,64 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Graduation Party Invite</title>
-  <style>
-    body {
-      background-color: #fef3c7;
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .invite {
-      background-color: #fff;
-      border: 3px dashed #f59e0b;
-      border-radius: 15px;
-      padding: 30px;
-      max-width: 600px;
-      margin: 0 auto;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-      color: #1d4ed8;
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.1rem;
-      color: #333;
-      margin: 10px 0;
-    }
-
-    button {
-      background-color: #f59e0b;
-      color: white;
-      padding: 12px 24px;
-      font-size: 1rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-
-    button:hover {
-      background-color: #d97706;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Everything in HTML & CSS</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <div class="invite">
-    <h1>🎓 You're Invited!</h1>
-    <p><strong>What:</strong> Emily's Graduation Bash</p>
-    <p><strong>When:</strong> June 20th, 2025 at 5:00 PM</p>
-    <p><strong>Where:</strong> 123 Celebration Ave, Party City</p>
-    <p>Join us for food, music, and memories 🎉</p>
-    <button>RSVP Now</button>
-  </div>
+    <header>
+        <h1>My Everything Website</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>This is a demo website using many HTML and CSS features.</p>
+        <ul>
+            <li>HTML Elements</li>
+            <li>CSS Styling</li>
+            <li>Responsive Design</li>
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <figure>
+            <img src="https://via.placeholder.com/300" alt="Placeholder Image" />
+            <figcaption>Sample Image</figcaption>
+        </figure>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label>Name:
+                <input type="text" name="name" required />
+            </label>
+            <label>Email:
+                <input type="email" name="email" required />
+            </label>
+            <label>Message:
+                <textarea name="message"></textarea>
+            </label>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Website</p>
+        <audio controls>
+            <source src="audio-sample.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+        </audio>
+    </footer>
 
 </body>
 </html>
