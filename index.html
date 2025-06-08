@@ -3,36 +3,65 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Everything in HTML & CSS</title>
+    <title>Complete HTML & CSS Website</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-    <header>
-        <h1>My Everything Website</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<header>
+    <h1>My Awesome Website</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#data">Data Table</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
+<main>
     <section id="about">
         <h2>About</h2>
-        <p>This is a demo website using many HTML and CSS features.</p>
-        <ul>
-            <li>HTML Elements</li>
-            <li>CSS Styling</li>
-            <li>Responsive Design</li>
-        </ul>
+        <p>This website is built using only HTML and CSS. It contains images, a table, a form, and responsive styling.</p>
     </section>
 
     <section id="gallery">
         <h2>Gallery</h2>
-        <figure>
-            <img src="https://via.placeholder.com/300" alt="Placeholder Image" />
-            <figcaption>Sample Image</figcaption>
-        </figure>
+        <div class="gallery">
+            <img src="https://picsum.photos/id/1015/300/200" alt="Gallery Image 1" />
+            <img src="https://picsum.photos/id/1016/300/200" alt="Gallery Image 2" />
+            <img src="https://picsum.photos/id/1018/300/200" alt="Gallery Image 3" />
+            <img src="https://picsum.photos/id/1020/300/200" alt="Gallery Image 4" />
+        </div>
+    </section>
+
+    <section id="data">
+        <h2>Data Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alice</td>
+                    <td>28</td>
+                    <td>New York</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>34</td>
+                    <td>London</td>
+                </tr>
+                <tr>
+                    <td>Charlie</td>
+                    <td>25</td>
+                    <td>Paris</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
     <section id="contact">
@@ -45,19 +74,16 @@
                 <input type="email" name="email" required />
             </label>
             <label>Message:
-                <textarea name="message"></textarea>
+                <textarea name="message" required></textarea>
             </label>
             <button type="submit">Send</button>
         </form>
     </section>
+</main>
 
-    <footer>
-        <p>&copy; 2025 My Website</p>
-        <audio controls>
-            <source src="audio-sample.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
-        </audio>
-    </footer>
+<footer>
+    <p>&copy; 2025 My Awesome Website</p>
+</footer>
 
 </body>
 </html>
